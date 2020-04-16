@@ -14,12 +14,15 @@ class ViewController: UIViewController, SFSafariViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+		DispatchQueue.main.asyncAfter(deadline: .now()) {
+            self.load(url: "https://clicktocalldespegar.calltechsa.com/cticontroldespegar/")
+        }
         
     }
     
     
     @IBAction func go(_ sender: Any) {
-        load(url: "https://clicktocall.calltechsa.com/clicktovideo/clicktovideo.html")
+        load(url: "https://clicktocalldespegar.calltechsa.com/cticontroldespegar/")
         
     }
     
